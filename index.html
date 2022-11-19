@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1751fd8ae4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    
+        <div class="container"></div>
+            <nav>
+                <img src="C:\Users\DELL\OneDrive\Desktop\website\fc9b695fe88e55f563975a99b671f67b.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    
+                    <li><a href="#contect">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>web & app developer</p>
+                <h1>Hi, I'm <span>Meet gohil</span> <br>from India</h1>
+            </div>   
+        </div>    
+    </div>
+        
+
+     </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="F:\meet\documents\IMG20220819125656.jpg">
+                   
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a Full Stack Developer, I become the jack of all techs, which means I must learn and be proficient in:
+                        HTML, CSS, UI & UX, JavaScript, etc.
+                        Server-side languages such as Java, Python, Node.js, Or Golang, etc.
+                        Frameworks Express, Spring Boot, Django, etc.
+                        Along with an understanding of System Design, Data Structures and Algorithms, Databases, and version control systems like Git.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        
+                        <p class="tab-links" onclick="opentab('education')">Education</p>                  
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>web development</span><br>designing & develope web</li>
+                        <li><span>app development</span><br>designing & develope app</li>
+                        <li><span>cyber security</span><br>secure thr system</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>bachlore in IT</span><br>fron R.K unniversity</li>
+                        <li><span>12th commerce</span><br>from gyandhara school</li>
+                        <li><span>primary schooling</span><br>from vivekanand school</li>
+                    </ul>
+                </div>
+            </div>    
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">my services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-duotone fa-code"></i>
+                    <h2>Web Design & Development</h2>
+                    <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network)</p>
+                    <a href="#">Learn more</a>
+                </div> 
+                
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design & Development</h2>
+                    <p>Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital...</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Cyber Security</h2>
+                    <p>Computer security, cybersecurity, or information technology security is the protection of computer systems and networks from information disclosure, theft of, or damage to their hardware, sof…</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contect">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>meetgohel517@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7600736801</p>
+                    <div class="social-icon">
+                        
+                        <a href="https://www.instagram.com/meet_gohil_3108/"><i class="fa-brands fa-instagram"></i></a>
+                    <br>    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    </div>
+                    <div id="link">
+                    
+                    
+                    
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <a href="Resume.docx" download='image' class="download-btn btn2">Download CV</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> 
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    </script> 
+</body>
+
+</html>
